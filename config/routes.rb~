@@ -39,7 +39,6 @@ match '/cart/remove/:id' => 'cart#remove'
 match '/clearCart' => 'cart#clearCart'
 match '/checkout' => 'cart#createOrder'
 root :to => 'site#home'
-match '/category/:id' => 'items#category'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -6,7 +6,7 @@ def category
 	@items = Item.find_all_by_category(params[:id])
 	@category = params[:id]
 
-	respond_to do |format|
+	respond_to_do ¦format¦
 	format.html#index.html.erb
 	format.json{render json: @items}
 	end
